@@ -3,13 +3,13 @@
 </h1>
 
 <p align="center">
-  <strong>Open-Source Documentation Assistant</strong>
+  <strong>Помічник з документації з відкритим кодом</strong>
 </p>
 
 <p align="left">
-  <strong>DocsGPT</strong> is a cutting-edge open-source solution that streamlines the process of finding information in project documentation. With its integration of the powerful <strong>GPT</strong> models, developers can easily ask questions about a project and receive accurate answers.
+  <strong>DocsGPT</strong> це передове рішення з відкритим кодом, яке спрощує процес пошуку інформації в проектній документації. Завдяки інтеграції потужних моделей <strong>GPT</strong> розробники можуть легко ставити запитання про проект і отримувати точні відповіді.
   
-Say goodbye to time-consuming manual searches, and let <strong>DocsGPT</strong> help you quickly find the information you need. Try it out and see how it revolutionizes your project documentation experience. Contribute to its development and be a part of the future of AI-powered assistance.
+Попрощайтеся з трудомістким ручним пошуком і дозвольте <strong>DocsGPT</strong> допомогти вам швидко знайти потрібну інформацію. Спробуйте й подивіться, як це революціонізує ваш досвід проектної документації. Внесіть свій внесок у його розвиток і станьте частиною майбутнього допомоги на основі ШІ.
 </p>
 
 <div align="center">
@@ -24,58 +24,54 @@ Say goodbye to time-consuming manual searches, and let <strong>DocsGPT</strong> 
 ![video-example-of-docs-gpt](https://d3dg1063dc54p9.cloudfront.net/videos/demov3.gif)
 
 
-## Features
+## Oсобливості
 
 ![Group 9](https://user-images.githubusercontent.com/17906039/220427472-2644cff4-7666-46a5-819f-fc4a521f63c7.png)
 
+## Дорожня карта
 
-
-## Roadmap
-
-You can find our [Roadmap](https://github.com/orgs/arc53/projects/2) here, please don't hesitate contributing or creating issues, it helps us make DocsGPT better!
+Ви можете знайти нашу [Roadmap](https://github.com/orgs/arc53/projects/2) тут, будь ласка, не соромтеся робити внески або створювати проблеми, це допоможе нам покращити DocsGPT!
 
 
 
 ## [Live preview](https://docsgpt.arc53.com/)
 
-## [Join Our Discord](https://discord.gg/n5BX8dh8rU)
+## [Приєднуйтесь до нашого Discord](https://discord.gg/n5BX8dh8rU)
 
 
-## Project structure
-- Application - flask app (main application)
+## Структура проекту
+- Application - програма flask (основна програма)
 
-- Extensions - chrome extension
+- Extensions - розширення chrome
 
-- Scripts - script that creates similarity search index and store for other libraries. 
+- Scripts - сценарій, який створює індекс пошуку подібності та зберігає для інших бібліотек. 
 
-- frontend - frontend in vite and
+- frontend - інтерфейс in vite and
 
-## QuickStart
+## Швидкий початок
 
-Note: Make sure you have docker installed
+Примітка. Переконайтеся, що докер встановлено
 
-1. Open dowload this repository with `git clone https://github.com/arc53/DocsGPT.git`
-2. Open docker-compose.yaml and replace <your_api_key> with your OpenAI's key (there are 4 places)
-3. Run `docker-compose build && docker-compose up`
+1. Відкрийте завантажте це сховище за допомогою `git clone https://github.com/arc53/DocsGPT.git`
+2. Відкрийте docker-compose.yaml і замініть <your_api_key> на ваш ключ OpenAI (є 4 місця)
+3. Запустіть `docker-compose build && docker-compose up`
 
-To stop just run Ctrl + C
+Щоб зупинитися, просто запустіть Ctrl + C
 
-## Development environments
+## Середовища розробки
 
-Spin up only 2 containers from docker-compose.yaml (by deleting all services except for redis and mongo)
+Розгорнути лише 2 контейнери з docker-compose.yaml (видаливши всі служби, крім redis і mongo)
 
-Make sure you have python 3.10 or 3.11 installed
+Переконайтеся, що у вас встановлено python 3.10 або 3.11
 
-1. Navigate to `/application` folder
-2. Install dependencies
-`pip install -r requirements.txt`
-3. Prepare .env file
-Copy .env_sample and create .env with your openai api token
-4. Run the app
-`python app.py`
-5. Start worker with `celery -A app.celery worker -l INFO`
+1. Перейдіть до папки `/application`
+2. Встановити залежності `pip install -r requirements.txt`
+3. Підготуйте файл .env
+Скопіюйте .env_sample і створіть .env за допомогою токена openai API
+4. Запустіть програму `python app.py`
+5. Почніть робщту з `celery -A app.celery worker -l INFO`
 
-To start frontend
+Щоб запустити інтерфейс:
 1. Navigate to `/frontend` folder
 2. Install dependencies
 `npm install`
@@ -84,16 +80,15 @@ To start frontend
 4. `npm run dev`
 
 
-[How to install the Chrome extension](https://github.com/arc53/docsgpt/wiki#launch-chrome-extension)
+[Як встановити розширення Chrome?](https://github.com/arc53/docsgpt/wiki#launch-chrome-extension)
 
 
-## [Guides](https://github.com/arc53/docsgpt/wiki)
+## [Посібники](https://github.com/arc53/docsgpt/wiki)
 
-## [Interested in contributing?](https://github.com/arc53/DocsGPT/blob/main/CONTRIBUTING.md)
+## [Хочете зробити внесок?](https://github.com/arc53/DocsGPT/blob/main/CONTRIBUTING.md)
 
-## [How to use any other documentation](https://github.com/arc53/docsgpt/wiki/How-to-train-on-other-documentation)
+## [Як використовувати будь-яку іншу документацію](https://github.com/arc53/docsgpt/wiki/How-to-train-on-other-documentation)
 
-## [How to host it locally (so all data will stay on-premises)](https://github.com/arc53/DocsGPT/wiki/How-to-use-different-LLM's#hosting-everything-locally)
+## [Як розмістити його локально (щоб усі дані залишалися на місці)](https://github.com/arc53/DocsGPT/wiki/How-to-use-different-LLM's#hosting-everything-locally)
 
-Built with [🦜️🔗 LangChain](https://github.com/hwchase17/langchain)
-
+Побудований [🦜️🔗 LangChain](https://github.com/hwchase17/langchain)
